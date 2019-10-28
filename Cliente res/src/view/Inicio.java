@@ -30,6 +30,7 @@ private MessageBean bm;
     private ControlSala cs;
      DefaultTableModel model;
      DefaultTableModel model2;
+     public String ip = "";
     public Inicio() throws RemoteException, NotBoundException {
         
         initComponents();
@@ -49,7 +50,9 @@ private MessageBean bm;
         }
           bm=new MessageBean();
         cr = new ControlReserva();
+        cr.ipserver = ip;
         cs = new ControlSala();
+        cs.ipserver = ip;
          model = (DefaultTableModel) jTable1.getModel();
         
     }

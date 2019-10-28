@@ -23,8 +23,9 @@ public class ControlReserva {
         private Res u=null;
     private IRes ir=null;
      List l;
+     public String ipserver = "";
      public ControlReserva() throws RemoteException, NotBoundException{
-		Registry r = LocateRegistry.getRegistry(10000);
+		Registry r = LocateRegistry.getRegistry(ipserver,10000);
 		ir= (IRes) r.lookup("Reserva");
 		
         }

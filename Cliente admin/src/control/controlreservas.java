@@ -19,9 +19,9 @@ import persistence.Docentes;
 public class controlreservas {
     private Docentes u=null;
     private IDocentes ir=null;
-    
+    public String ipserver="";
     public controlreservas() throws RemoteException, NotBoundException{
-		Registry r = LocateRegistry.getRegistry(10000);
+		Registry r = LocateRegistry.getRegistry(ipserver,10000);
 		ir= (IDocentes) r.lookup("Usuario");
 		
         }

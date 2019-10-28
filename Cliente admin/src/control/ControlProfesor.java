@@ -22,9 +22,9 @@ public class ControlProfesor {
     private Profesor u=null;
    List l;
     private IProfesor ir=null;
-    
+    public String ipserver="";
     public ControlProfesor() throws RemoteException, NotBoundException{
-		Registry r = LocateRegistry.getRegistry(10000);
+		Registry r = LocateRegistry.getRegistry(ipserver,10000);
 		ir= (IProfesor) r.lookup("Profesor");
 		
         }

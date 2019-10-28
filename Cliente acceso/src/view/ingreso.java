@@ -10,6 +10,7 @@ import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -24,6 +25,7 @@ public class ingreso extends javax.swing.JFrame {
     public ingreso() throws RemoteException, NotBoundException {
         initComponents();
         cs = new ControlReserva();
+        cs.ipserver = JOptionPane.showInputDialog("Ingrese la ip del servidor: ");
         bm = new MessageBean();
     }
 

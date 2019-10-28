@@ -3,9 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/carlo/OneDrive/Documents/NetBeansProjects/Cliente%20admin/src/view/Profesor.java</file>
-            <file>file:/C:/Users/carlo/OneDrive/Documents/NetBeansProjects/Cliente%20admin/src/control/ControlSala.java</file>
-            <file>file:/C:/Users/carlo/OneDrive/Documents/NetBeansProjects/Cliente%20admin/src/view/TextPrompt.java</file>
+            <file>file:/home/diego/Escritorio/vivian/TrabVivian/Cliente%20admin/src/control/ControlSala.java</file>
+            <file>file:/home/diego/Escritorio/vivian/TrabVivian/Cliente%20admin/src/view/Inicio.java</file>
+            <file>file:/home/diego/Escritorio/vivian/TrabVivian/Cliente%20admin/src/control/ControlProfesor.java</file>
+            <file>file:/home/diego/Escritorio/vivian/TrabVivian/Cliente%20admin/src/control/ControlReserva.java</file>
+            <file>file:/home/diego/Escritorio/vivian/TrabVivian/Cliente%20admin/src/view/MENU.java</file>
+            <file>file:/home/diego/Escritorio/vivian/TrabVivian/Cliente%20admin/src/view/Login.java</file>
+            <file>file:/home/diego/Escritorio/vivian/TrabVivian/Cliente%20admin/src/control/controlreservas.java</file>
+            <file>file:/home/diego/Escritorio/vivian/TrabVivian/Cliente%20admin/src/view/Profesor.java</file>
         </group>
     </open-files>
 </project-private>

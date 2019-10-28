@@ -23,8 +23,9 @@ public class ControlSala {
      private Sala u=null;
     private ISala ir=null;
      List l;
+     public String ipserver ="";
      public ControlSala() throws RemoteException, NotBoundException{
-		Registry r = LocateRegistry.getRegistry(10000);
+		Registry r = LocateRegistry.getRegistry(ipserver,10000);
 		ir= (ISala) r.lookup("Salas");
 		
         }

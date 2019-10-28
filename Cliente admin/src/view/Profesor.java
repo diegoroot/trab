@@ -15,6 +15,7 @@ import java.rmi.RemoteException;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -29,7 +30,7 @@ public class Profesor extends javax.swing.JFrame {
         DefaultTableModel model;
         DefaultTableModel models;
         DefaultTableModel modelr;
-        
+       public String ip = ""; 
     /**
      * Creates new form Profesor
      */
@@ -38,10 +39,13 @@ public class Profesor extends javax.swing.JFrame {
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
         System.out.println(screenSize);
         this.setExtendedState(MAXIMIZED_BOTH);
-       
+        ip = JOptionPane.showInputDialog("Ingrese la ip del servidor:");
          cp=new ControlProfesor();
+         cp.ipserver = ip;
          cs = new ControlSala();
+         cs.ipserver = ip;
          cr = new ControlReserva();
+         cr.ipserver = ip;
                  
 		bm=new MessageBean();
                 model = (DefaultTableModel) jTable1.getModel();
